@@ -14,4 +14,9 @@ describe('helloWorld', function() {
     });
 });
 
-//bork bork
+describe('sayHello', function() {
+    it('should be a defined function', function () {
+        expect(typeof sayHello).toBe('function');
+    });
+    // it("should")
+});
