@@ -4,5 +4,10 @@ function helloWorld() {
 }
 
 function sayHello(n) {
-    return "Hello, " + n;
+    if (typeof n === "string") {
+        return "Hello, " + n;
+    }
+    else {
+        return "Hello, World!"
+    }
 }

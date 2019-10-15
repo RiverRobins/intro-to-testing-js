@@ -30,4 +30,16 @@ describe('sayHello', function() {
     it('should return "Hello, Pat" when passed the string "Pat"', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat");
     });
+    it('should return "Hello, World!" when given false', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when given null', function () {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when given [2, 4, 2, 4]', function () {
+        expect(sayHello([2, 4, 2, 4])).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when given 93', function () {
+        expect(sayHello(93)).toBe("Hello, World!");
+    });
 });
